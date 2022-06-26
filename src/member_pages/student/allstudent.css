@@ -1,0 +1,67 @@
+.student{
+    margin: 0%;
+    padding: 0%;
+}
+.student-header{
+        display: flex;
+            justify-content: space-between;
+            height: 5vh;
+            background-color: rgb(235 235 235);
+            align-items: center;
+            padding: 0px 20px;
+            box-shadow: -4px -2px 15px 2px #d1d2d9;
+}
+.student-header p{
+    font-weight: 700;
+}
+.student-header button{
+    padding: 5px;
+    background-color: rgb(214 214 213);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+.change-password{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.change-password-box{
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+    background-color:white;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.change-password-box h1{
+    margin-bottom: 30px;
+}
+.change-password-input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 400px;
+    max-width: 90vw;
+}
+.change-password-box button{
+    padding: 10px;
+}
+.change-forgot-change-password{
+    height: 90vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}

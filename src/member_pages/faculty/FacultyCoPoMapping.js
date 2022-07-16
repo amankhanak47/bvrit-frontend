@@ -34,15 +34,13 @@ const FacultyCoPoMapping = () => {
 // console.log(newarray)
 const cosarray=Object.values(codata)
 
-const handlesubmit = (e) => {
+  const handlesubmit = (e) => {
+   setCodata([ ...codata,{[e.target.name]:e.target.value}])
   marksarray = {section: section, year:year, subject:subject, exam:exam,noofquestion:noofquestion, maxmarks:maxmarks };
   navigate("/faculty-co-po-table")
+  console.log(codata)
   e.preventDefault();
-  // console.log(section, year, subject, exam, noofquestion, maxmarks);
-  // console.log(Object.values(codata))
-  // console.log(Object.values(marksdata)[0])
-  // console.log(Object.values(marksdata))
-  // console.log(Object.values(codata))
+
     
    
   };
@@ -74,7 +72,7 @@ const handlesubmit = (e) => {
     setMarksdata({ ...marksdata,[e.target.name]:e.target.value})
   }
   const arrange_co = (e) => {
-     setCodata({ ...codata,[e.target.name]:e.target.value})
+     setCodata([ ...codata,{[e.target.name]:e.target.value}])
   }
 
   return (
@@ -201,7 +199,7 @@ const handlesubmit = (e) => {
             </label>
             <label htmlFor="co">
                 Co's
-               <input  name={`question${e}cos${e}`} onChange={arrange_co} type="text" />
+               <input  name={`question${e}cos${e}`} onInputCapture={arrange_co} type="text" />
               {/* <select name={`question${e}.copo${e}`} className="inp-conponent-co-po-select">
                   <option value="none">none</option>
                   {newarray.map(e => <>

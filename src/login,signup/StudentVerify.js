@@ -34,7 +34,8 @@ const StudentVerify = () => {
         <>
         <div className="verified">
             <div id="mojoauth-passwordless-form">
-                <h1>please enter college_email</h1>
+                    <h1>please enter college_email</h1>
+                     <p>after verifying email signup page will come</p>
                 </div>
                 </div>
             </>
